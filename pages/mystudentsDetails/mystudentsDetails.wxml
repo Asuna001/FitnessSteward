@@ -1,0 +1,20 @@
+<!--pages/mystudentsDetails/mystudentsDetails.wxml-->
+
+<view class="container" >
+  <view class="note">
+   <text class="details" >学生信息详情</text>
+  </view>
+  <view class="info" >
+    <text class="name">{{studentInfo.studentName}}</text>
+    <text class="class">班级：{{studentInfo.studentClass}}</text>
+    <text class="gender">性别：{{studentInfo.studentGender}}</text>
+    <text class="age">年龄：{{studentInfo.studentAge}}</text>
+    <text class="weight">体重：{{studentInfo.studentWeight}}</text>
+    <text class="contact">联系方式：{{studentInfo.parentPhone}}</text>
+   
+    <view class="likes">
+      <text class="num">{{student_likes}}</text>
+      <image style="width: 99rpx; height: 94rpx; display: block; box-sizing: border-box" class="avatar"bindtap="likeStudent" src='https://img.51miz.com/Element/00/80/44/84/590569c7_E804484_0945f636.png'/>
+    </view>
+  </view>
+</view>

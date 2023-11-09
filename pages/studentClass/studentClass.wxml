@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="title">我的班级信息</view>
+  <form class="form">
+    <view class="sub-title">班级号：{{class}}</view>
+
+    <view class="sub-title">班级成员：</view>
+    <view class="student-list">
+      <block wx:for="{{studentList}}" wx:key="index">
+        <view class="student-item">
+          <view class="student-name">{{item.studentName}}</view>
+        </view>
+      </block>
+    </view>
+
+  </form>
+
+</view>

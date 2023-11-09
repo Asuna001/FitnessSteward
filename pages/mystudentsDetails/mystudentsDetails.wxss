@@ -1,0 +1,67 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #6fc599;
+    /* 绿色背景 */ 
+   
+}
+.details{
+  text-align: center;
+  font-size: 70rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: relative; 
+  left: 0rpx; 
+  top: -113rpx
+}
+.info {
+  padding: 50rpx 50rpx 50rpx 50rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 70rpx;
+  font-weight: 500;
+  font-family: 华文行楷;
+  margin-bottom: 60rpx;
+  
+}
+
+.class,
+.gender,
+.age,
+.weight,
+.contact {
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 60rpx;
+}
+
+.num {
+  font-size: 60rpx;
+  font-weight: 500;
+  margin-right: 40rpx;
+  color: #00b894; /* set the theme color to green */
+}
+
+.avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+}

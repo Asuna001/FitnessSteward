@@ -1,0 +1,11 @@
+<view class="company-list">
+  <block wx:for="{{unauditedCompany}}" wx:key="account">
+    <navigator url="/pages/companyInformationDetail/companyInformationDetail?id={{item._id}}">
+      <view class="company-item">
+        <image class="company-logo" src="{{item.companyLogoUrl}}"></image>
+        <view class="company-name">{{item.companyName}}</view>
+        <view class="company-profile">{{item.companyProfile}}...</view>
+      </view>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,186 @@
+page {
+  height: 100%;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 顶部背景 */
+.top-box {
+  height: 30%;
+  background-image: linear-gradient(#7acfa6, #3de09f);
+  padding: 30rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.next-text {
+  margin-top: 15rpx;
+  font-size: 40rpx;
+}
+
+/* 内容 */
+.center-box {
+  background-color: white;
+  margin: -20% 20rpx 0rpx 20rpx;
+  padding: 25rpx;
+  border-radius: 15rpx;
+  -webkit-filter: drop-shadow(0 0 8rpx #3de09f);
+  filter: drop-shadow(0 0 8rpx #3de09f);
+}
+
+/* 导航 */
+.nav {
+  display: flex;
+  text-align: center;
+  font-size: 40rpx;
+  margin-bottom: 8%;
+}
+
+.left {
+  flex: 1;
+  font-weight: bold;
+  color: #3de09f;
+}
+
+
+.select text {
+  color: #3de09f;
+}
+
+/* 输入框 */
+.input-box {
+  margin-top: 5%;
+}
+
+.wei-input {
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  border-bottom: solid #e5e5e5 1rpx;
+  padding-bottom: 2%;
+}
+
+.icon {
+  margin-right: 2%;
+}
+
+.input {
+  width: 100%;
+  margin-left: 2%;
+}
+
+/* 没有账号 点击注册 */
+.enrollList{
+  display: flex;
+  justify-content:flex-end;
+  font-size: 12px;
+  margin-right: 2.5%;
+  margin-top: 5%;
+}
+
+.enrollItem{
+  color: rgb(34, 163, 238);
+}
+
+
+
+/* 提交按钮 */
+.submit-btn{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.button {
+  width: 100%;
+  border-radius: 15rpx;
+  box-shadow: 0 5rpx 10rpx #a5a5a5;
+  padding: 5% 2%;
+  color: white;
+  font-weight: bold;
+  border-radius: 15rpx;
+}
+
+
+
+/* 重影 */
+.shadow {
+  box-shadow: 0rpx 0rpx 10rpx 0rpx #3de09f;
+  border-radius: 25rpx;
+  background-color: white;
+}
+
+.shadow-1 {
+  height: 40rpx;
+  margin: -20rpx 50rpx 0 50rpx;
+}
+
+.shadow-2 {
+  position: relative;
+  z-index: -888;
+  height: 50rpx;
+  margin: -30rpx 80rpx 0 80rpx;
+}
+
+.sumbit-btn button {
+  margin-top: 5%;
+  padding: 4% 2%;
+  line-height: 1;
+}
+
+button:active {
+  background-color: #F0F0F0;
+  border: 2px solid black;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+ 
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 30rpx;
+  font-size: 40rpx;
+  color: #030303;
+  text-align: center;
+}
+.modal-body{
+  font-size: 36rpx;
+  margin : 10rpx 30rpx
+}
+.modal-footer{
+  display: flex;
+}
+.modal-but1{
+  color: rgb(27, 25, 25);
+  width: 20%;
+}
+.modal-but2{
+  background-color: #3de09f;
+  width: 20%;
+}
+

@@ -1,0 +1,85 @@
+<view class="page">
+  <view class="header">
+    <view class="title">未认证企业信息</view>
+    <view class="expand" bindtap="toggleCompanyExpand">{{companyExpand ? '收起' : '展开'}}</view>
+  </view>
+  <view class="form" wx:if="{{companyExpand}}">
+
+    <view wx:for="{{company}}">
+      <view wx:if="{{item.hasIdentity==5}}" class="company-item">
+        <view class="sub-title">企业名称：</view>
+        <view class="company-name">{{item.companyName}}</view>
+        <view class="sub-title">企业账号：</view>
+        <view class="company-account">{{item.account}}</view>
+        <view class="sub-title">企业联系方式：</view>
+        <view class="company-contact">{{item.companyContact}}</view>
+        <view class="sub-title">企业LOGO地址：</view>
+        <view class="company-logoUrl">{{item.companyLogoUrl}}</view>
+        <view class="sub-title">企业简介：</view>
+        <view class="company-profile">{{item.companyProfile}}</view>
+
+        <view class="submit-btn">
+          <button style="width: 40%;background-color: #3de09f;font-size: 30rpx;" type="primary" bindtap="passCompany" data-choose="{{item}}">通过</button>
+          <button style="width: 40%;background-color:red;font-size: 30rpx;" bindtap="unPassCompany" data-choose="{{item}}">打回</button>
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+
+
+
+
+<view class="page">
+  <view class="header">
+    <view class="title">未认证教练信息</view>
+    <view class="expand" bindtap="toggleCoachExpand">{{coachExpand ? '收起' : '展开'}}</view>
+  </view>
+  <view class="form" wx:if="{{coachExpand}}">
+    <view wx:for="{{coach}}">
+      <view wx:if="{{item.hasIdentity==4}}" class="coach-item">
+
+        <view class="sub-title">教练头像：</view>
+        <image class="coach-head" src="{{item.avatarurl}}"></image>
+        <view class="sub-title">教练身份证信息：</view>
+        <image class="coach-head" src="{{item.IDCardFileID}}"></image>
+        <view class="sub-title">教练简历：</view>
+        <view class="coach-name" bindtap="openPDF" data-choose="{{item.PDFID}}">点击下载</view>
+        <view class="sub-title">教练荣誉证明：</view>
+        <view class="coach-name" bindtap="openHonorEvidence" data-choose="{{item.honorEvidenceID}}">点击下载</view>
+        <view class="sub-title">教练姓名：</view>
+        <view class="coach-name">{{item.name}}</view>
+        <view class="sub-title">教练性别：</view>
+        <view class="coach-sex">{{item.coachSex}}</view>
+        <view class="sub-title">教练年龄：</view>
+        <view class="coach-age">{{item.coachAge}}</view>
+        <view class="sub-title">教练联系方式：</view>
+        <view class="coach-phone">{{item.coachPhone}}</view>
+        <view class="sub-title">教练专业：</view>
+        <view class="coach-type">{{item.type}}</view>
+        <view class="sub-title">教练账号：</view>
+        <view class="coach-account">{{item.account}}</view>
+
+<view class="layout">
+  <view class="row">
+    <view class="class-btn" bindtap="passCoach" data-choose="{{item}}" data-class="0">分给0班</view>
+    <view class="class-btn" bindtap="passCoach" data-choose="{{item}}" data-class="1">分给1班</view>
+  </view>
+  <view class="row">
+    <view class="class-btn" bindtap="passCoach" data-choose="{{item}}" data-class="2">分给2班</view>
+    <view class="class-btn" bindtap="passCoach" data-choose="{{item}}" data-class="3">分给3班</view>
+  </view>
+</view>
+
+
+
+        <button style="width: 40%; background-color:red; font-size: 30rpx;" bindtap="unPassCoach" data-choose="{{item}}">打回</button>
+      </view>
+    </view>
+  </view>
+</view>

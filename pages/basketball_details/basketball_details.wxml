@@ -1,0 +1,76 @@
+<!-- *******************basketball course detail**************** -->
+<view class="img_details">
+    <image class="image" src="https://img.freepik.com/free-photo/black-man-doing-sports-playing-basketball-sunrise-jumping-silhouette_285396-1440.jpg?size=626&ext=jpg"></image>
+
+    <!-- course purpose -->
+    <view id="onlineView">
+        <image src="https://img.freepik.com/free-icon/basketball_318-821933.jpg?size=338&ext=jpg"></image>
+        <text> 课程目的</text>
+    </view>
+
+    <text class="details">每周六、日开课，按照学员年龄和程度进行分组教学，并科学制定训练时间，教学过程中突出年龄和身体条件的差异制定不同的训练内容，安排不同的训练计划，通过一个阶段的篮球训练课程，提升篮球技能、培养团队精神、塑造积极开朗的健康性格。</text>
+
+    <!-- course introduction -->
+    <view id="onlineView">
+        <image src="https://img.freepik.com/free-icon/basketball_318-821933.jpg?size=338&ext=jpg"></image>
+        <text> 课程介绍</text>
+    </view>
+
+    <text class="primary">初级班：经过1年以上培训班训练，能独立完成基本运球测试，适合6一8周岁孩子，开班15人；</text>
+
+    <text class="intermediate">中级班：经过1年以上初级班训，有一定篮球基础者，适合7一9周岁孩子，开班15人；</text>
+
+    <text class="advanced">提高班：经过1到2年中级班训练，有较好篮球基础者，适合9-11周岁孩子，开班15人；</text>
+
+    <text class="competitive">竞赛班：经过1到2年提高班训练，具备比较完整的篮球基本功可以开展初步对抗性训练和篮球技战术培养提高者，开班15人。</text>
+
+    <!-- <text class="classes">初级班：经过1年以上培训班训练，能独立完成基本运球测试，适合6一8周岁孩子，开班15人；
+        中级班：经过1年以上初级班训，有一定篮球基础者，适合7一9周岁孩子，开班15人；
+        提高班：经过1到2年中级班训练，有较好篮球基础者，适合9-11周岁孩子，开班15人；
+        竞赛班：经过1到2年提高班训练，具备比较完整的篮球基本功可以开展初步对抗性训练和篮球技战术培养提高者，开班15人。</text> -->
+
+    <!-- course arrangement -->
+    <view id="onlineView">
+        <image src="https://img.freepik.com/free-icon/basketball_318-821933.jpg?size=338&ext=jpg"></image>
+        <text> 课程安排</text>
+    </view>
+
+    <scroll-view class="table" scroll-x="true">
+        <!-- first line -->
+        <view class="tr">
+            <view class="th_1">训练时间</view>
+            <view class="th_2">9:30-12:00</view>
+            <view class="th_3">14:30-17:00</view>
+            <view class="th_4">19:30-21:30</view>
+
+        </view>
+        <!-- second line -->
+        <view class="tr">
+            <view class="td_1">5.1-5.17</view>
+            <view class="td_2">√</view>
+            <view class="td_3">√</view>
+            <view class="td_4">×</view>
+        </view>
+
+        <!-- third line -->
+        <view class="tr">
+            <view class="td_1">5.25-6.12</view>
+            <view class="td_2">×</view>
+            <view class="td_3">√</view>
+            <view class="td_4">√</view>
+        </view>
+
+        <!-- fourth line -->
+        <view class="tr">
+            <view class="td_1">7.15-8.1</view>
+            <view class="td_2">√</view>
+            <view class="td_3">×</view>
+            <view class="td_4">√</view>
+        </view>
+    </scroll-view>
+</view>
+
+
+<!-- *******************choose course**************** -->
+<!-- choose course button -->
+<button id="btn">选课</button>

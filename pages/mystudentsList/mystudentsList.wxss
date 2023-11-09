@@ -1,0 +1,31 @@
+.container {
+   background-color: #F0FFF0;
+    /* 绿色背景 */ padding: 20rpx;
+   }
+
+.scroll-view {
+   height: 600rpx;
+    overflow-y: 
+    scroll;
+   }
+
+.student-item { 
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20rpx;
+   padding: 20rpx; 
+   border-radius: 10rpx; 
+   box-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */ }
+
+.avatar {
+   width: 80rpx;
+    height: 80rpx; 
+    border-radius: 50%;
+     margin-right: 20rpx; }
+
+.name { 
+  font-size: 32rpx; 
+  color: #333; 
+  font-weight: bold;
+ }

@@ -1,0 +1,42 @@
+<!--pages/mine/mine.wxml-->
+<view class="user-head">
+    <view class="center">
+        <view class="user-img"wx:if="{{hasUserInfo == false}}" bind:tap="login">
+          <image src="{{avatar}}"></image>
+        </view>
+        <view class="user-img" wx:if="{{hasUserInfo == true}}" bind:tap = "preview">
+            <image src="{{avatar}}"></image>
+        </view>
+        <view class="user-text">
+            <text class="text">{{userName}}</text>
+            
+     <!-- You can change it to user information later{{userInfo.nickName}} -->
+        </view>
+    </view>
+</view>
+<view class="list">
+    <view class="item" bindtap="order">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5vt7zVqXV13T47Eeq3M2YygVDMzz.gbQ9mboUqGBXJf*IDXqF8xbeecT4p1BCy6ajgqTXeK6UcQAg3YVfUp7lQg!/mnull&bo=AAIAAgAAAAADByI!&rf=photolist&t=5"/>我的订单
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="order">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5hR8*gbVAs1lbLSVerXr2NcP5oEs.iGIBGvUYrwh6qMd.NgFmh8KHUpqAJ7fDlnqeIFHzKWcJPhvNOZv6TAuGSc!/mnull&bo=AAIAAgAAAAADByI!&rf=photolist&t=5"/>服务评价
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="manager">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5hR8*gbVAs1lbLSVerXr2Nd1jg5HaIvF3fbh2jBOrn0SjSliq9VRf*UUpBEQVOTL2vHkbnn8cdhiq6Qud0EHRd4!/mnull&bo=AAIAAgAAAAADByI!&rf=photolist&t=5"/>会员权益
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="order">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5vt7zVqXV13T47Eeq3M2YyhRM3PHyTMPQK587BEzAx3nD2QkXY.5HAtO4I7XhxfsegTwewSJi8qSvXCfeVTs430!/mnull&bo=AAIAAgAAAAADByI!&rf=photolist&t=5"/>线上咨询
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="set">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5vt7zVqXV13T47Eeq3M2YyglEfXjhaC9Qc1eyVZDKqe06L9RkCBmmF0dGPTt.08QmBfPstJ0LSr7.AM.UfRsV.s!/mnull&bo=AAIAAgAAAAADByI!&rf=photolist&t=5"/>设置
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="quit">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5kRAyxY0EcDjS0RSHBxKW8YzwmfHBOwPA8jpgZyC2qii6qRIF2g35VvAZxvES*2AnA3FgFcM6X94b0LKh.j4cXE!/mnull&bo=gACAAIAAgAADByI!&rf=photolist&t=5"/>退出登陆
+        <text class="jump">〉</text>
+    </view>
+</view>

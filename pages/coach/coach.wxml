@@ -1,0 +1,30 @@
+<!-- ****************coach***************** -->
+    <!-- 实名认证后的界面 -->
+<view class = "coach_container">
+
+        <!-- coach profiles -->
+        <view class='introduction'>
+            <image class='image' src='https://img.freepik.com/premium-photo/business-people-fill-resume-application-information-desk-presents-ability-company-agree-with-position-job_2034-2642.jpg?size=626&ext=jpg' style="width: 699rpx; height: 258rpx; display: inline-block; box-sizing: border-box"bindtap="gotoaccess_coach"></image>
+            <view class="text"bindtap="gotoaccess_coach">我的评价</view>
+            
+        </view>
+        
+        <!-- recruitment information -->
+        <view class='recruitment'>
+            <image class='image' src='https://img.freepik.com/free-photo/hands-partners_1098-13020.jpg?size=626&ext=jpg'bindtap="showModal"></image>
+            <view class="text">企业直通</view>
+        </view>
+
+        <!-- class information -->
+        <view class='class'>
+            <image class='image' src='https://img.freepik.com/free-photo/talking-trainer_1098-15666.jpg?size=626&ext=jpg'bindtap="gotomystudents"></image>
+            <view class="text"bindtap="gotomystudents">我的学生</view>
+        </view>
+
+        <!-- feedback -->
+        <view class='opinion'>
+            <image class='image' src='https://img.freepik.com/free-photo/football-trainer-teaching-his-pupils_23-2149708010.jpg?size=626&ext=jpg' style="width: 699rpx; height: 251rpx; display: inline-block; box-sizing: border-box"bindtap="showModal"></image>
+            <view class="text">意见反馈</view>
+        </view> 
+ 
+</view>

@@ -1,0 +1,84 @@
+.image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.type {
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20rpx;
+}
+
+.score-item {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.intro {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.evaluate-form {
+  margin-top: 20rpx;
+}
+
+.evaluate-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.form-content {
+  background-color: #f0f8ff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 5rpx 5rpx;
+}
+
+.evaluate-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.evaluate-item-title {
+  font-size: 30rpx;
+  color: #666;
+  width: 35%;
+}
+
+.evaluate-item-score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 65%;
+}
+
+.evaluate-item-score radio-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.evaluate-item-score radio {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 5%;
+}

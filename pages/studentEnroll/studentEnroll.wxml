@@ -1,0 +1,41 @@
+<!-- pages/studentEnroll/newStudentEnroll.wxml -->
+<view class="container">
+  <view class="title">学生信息绑定</view>
+  <form bindsubmit="studentEnroll" class="form">
+    <view class="sub-title">学生信息</view>
+    <view class="item">
+      <input name="studentName" placeholder="请输入学生姓名" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="studentGender" placeholder="请输入学生性别" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="studentAge" placeholder="请输入学生年龄" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="studentWeight" placeholder="请输入学生体重" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+
+    <view class="sub-title">家长信息</view>
+    <view class="item">
+      <input name="parentPhone" placeholder="请输入家长电话" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="parentVx" placeholder="请输入家长微信" style="font-size: 16px"></input>
+      <view class="border"></view>
+    </view>
+
+
+ 
+
+      <view class="subBkg">
+      <button type="primary" form-type="submit" disabled="{{loading}}">立即提交</button>
+      <button form-type="reset">重置信息</button>
+    </view>
+  </form>
+</view>

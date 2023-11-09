@@ -1,0 +1,80 @@
+<!--pages/studentToCoach/studentToCoach.wxml-->
+<view>
+  <view>
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+      <!-- search box -->
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="输入教练信息进行搜索" bindinput="search" bindblur="show"></input>
+        </view>
+      </view>
+    <!-- cancel search -->
+      <view class="weui-search-bar__cancel-btn" bindtap='hideInput'>取消</view>
+    </view>
+  </view>
+</view>
+<!-- <view class="search">
+  <view class="searchBox">
+    <form bindsubmit="search">
+    <input  placeholder="输入教练信息进行搜索" bindinput="search" bindblur="show"></input>
+      <button form-type="submit">搜索</button>
+    </form>
+  </view> 
+</view>-->
+<view class="show" wx:if="{{searchStatus==true}}">
+  <view class="list" wx:for="{{searchCoachInfo}}">
+    <navigator url="/pages/companyCoachDetail/companyCoachDetail?id={{item._id}}">
+      <view class="card">
+        <image src="{{item.avatarurl}}" mode="aspectFill" />
+        <view class="info">
+          <view class="name">{{item.name}}</view>
+          <view class="type">{{item.type}}</view>
+          <view class="scores">
+            <view class="score-item">企业用户评分：</view>
+            <view class="score-item">态度：{{item.parentScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.parentScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.parentScore[2]}}分</view>
+          </view>
+          <view class="scores">
+            <view class="score-item">企业评分：</view>
+            <view class="score-item">态度：{{item.companyScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.companyScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.companyScore[2]}}分</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    </view>
+    
+  </view>
+<view class="show" wx:if="{{searchStatus==false}}">
+  <view class="list" wx:for="{{coachInfo}}">
+    <view class="item" bindtap="learnMore" data-chooseCoach="{{item}}">
+    <navigator url="/pages/companyCoachDetail2/companyCoachDetail2?id={{item._id}}">
+      <view class="card">
+        <image src="{{item.avatarurl}}" mode="aspectFill" />
+        <view class="info">
+          <view class="name">{{item.name}}</view>
+          <view class="type">{{item.type}}</view>
+          <view class="scores">
+            <view class="score-item">家长评分：</view>
+            <view class="score-item">态度：{{item.parentScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.parentScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.parentScore[2]}}分</view>
+          </view>
+          <view class="scores">
+            <view class="score-item">企业评分：</view>
+            <view class="score-item">态度：{{item.companyScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.companyScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.companyScore[2]}}分</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    </view>
+
+  </view>
+  <button class="refresh-btn" bindtap="refreshScore" style="position: relative; left: 0rpx; top: 36rpx; width: 432rpx; height: 108rpx; display: block; box-sizing: border-box">刷新评分</button>     
+</view>
+

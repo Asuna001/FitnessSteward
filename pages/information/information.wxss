@@ -1,0 +1,115 @@
+.xcontainer {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F6F6F4;
+  height: 40px;
+}
+.backgroundImg{
+  filter: brightness(10%);
+  filter:opacity(76%);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  /* transition: background.3s ease-in-out; */
+}
+
+.child {
+  width: 100px;
+  height: 24px;  
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-family: "华文楷体";
+}  
+
+
+.s1 {
+  width: 100px;
+  height: 30px;
+  /* background-color: aquamarine; */
+}
+.hotspot:not([size='mini']){ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0rpx; 
+  width:22%; 
+  height:80%; 
+  /* border-radius: 40rpx;  */
+  color: white; 
+  box-shadow: 2px 1px 1px #cccccc;
+  margin: 4px;
+}
+
+/**index.wxss**/
+.text {
+  /* 字体大小 */
+  font-size:15px;
+  /* 字体颜色 */
+  color: #FFF;
+  /* 字体风格-粗细 */
+  /* font-weight: bold; */
+  font-family:"黑体";
+}
+
+.newscontain {
+  display: flex; 
+  width:100%;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F6F6F4;
+}
+.card {
+  display: flex; 
+  flex-direction:column;
+  border: 2px solid #ffffff;
+  width:100pt;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 4px 1px 1px #cccccc;
+  margin: 8px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 120px;
+  background-color: #eeeeee;
+}
+
+.time {
+  float: right;
+  margin-top: 100px;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.title {
+  padding: 14px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.post {
+  float: right;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  border: 0 solid #ffffff;
+  border-radius: 500px;
+  margin: 16px;
+  box-shadow: 4px 1px 1px #cccccc;
+}

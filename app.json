@@ -1,0 +1,102 @@
+{
+    "pages": [
+      
+      "pages/home/home",
+      "pages/message/message",
+      "pages/choose_basketball/choose_basketball", 
+      "pages/coach/coach",  
+      "pages/basketball_details/basketball_details",
+
+      "pages/event_information/event_information",
+      "pages/shopping/shopping",
+      "pages/class_schedule/class_schedule",
+      "pages/information/information",
+      "pages/mine/mine",
+      "pages/search/search",
+      "pages/information_inner/information_inner",
+      "pages/information_inner2/information_inner2",
+      "pages/dataList/dataList",
+      "pages/survey/survey",
+
+      "pages/enroll/enroll",
+      "pages/set/set",
+      "pages/login/login",
+      "pages/studentEnroll/studentEnroll",
+
+      "pages/studentToCoach/studentToCoach",
+      "pages/studentClass/studentClass",
+
+      "pages/coachEnroll/coachEnroll",
+
+      "pages/companyEnroll/companyEnroll",
+
+      "pages/manager/manager",
+
+
+
+
+      "pages/access_coach/access_coach",
+      "pages/mystudentsList/mystudentsList",
+      "pages/mystudentsDetails/mystudentsDetails",
+
+      "pages/companyInformation/companyInformation",
+      "pages/companyInformationDetail/companyInformationDetail",
+      "pages/company/company",
+      "pages/companyCoachDetail/companyCoachDetail",
+
+      "pages/companyCoachDetail2/companyCoachDetail2",
+      "pages/companyToCoach/companyToCoach",
+
+      "pages/detect/detect",
+      "pages/emergency/emergency",
+
+      "pages/changePassword/changePassword"
+
+      
+
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#7acfa6",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "体适能管家",
+        "backgroundColor": "#7acfa6", 
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+      "color": "#707070", 
+      "selectedColor": "#57cf93",
+      "borderStyle": "black",
+      "list": [
+        {
+          "pagePath": "pages/home/home",
+          "text": "首页",
+          "iconPath": "/images/tabs/home.jpg",
+          "selectedIconPath": "/images/tabs/home-active.jpg"
+        },
+        {
+          "pagePath": "pages/information/information",
+          "text": "讯息",
+          "iconPath": "/images/tabs/information.png",
+          "selectedIconPath": "/images/tabs/information-active.png"
+        },
+        {
+          "pagePath": "pages/message/message",
+          "text": "消息",
+          "iconPath": "/images/tabs/message.png",
+          "selectedIconPath": "/images/tabs/message-active.png"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "text": "我的",
+          "iconPath": "/images/tabs/my.png",
+          "selectedIconPath": "/images/tabs/my-active.png"
+        }
+      ]
+      },
+    "usingComponents": {
+      "Privacy":"/components/Privacy/Privacy"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,60 @@
+<!--pages/information/information.wxml-->
+
+<!-- the top swip image -->
+<view style="position: relative; width:100%;  display: block; box-sizing: border-box">
+  <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5uoDm4qSkwtMuDDqOIuITSHDe40zeH3pCWeNVdOt*M*mNdWzA.c8W8O7dZgzq9*bOON7NJnW5yqlbQNKgjpmNdU!/mnull&bo=5A1ABuQNQAYBByA!&rf=photolist&t=5"class="backgroundImg"></image>
+  <text class="child" style="position: absolute; left: -425rpx; top: -230rpx; color: #FFF; font-size: 40px">热点</text>
+  <text class="child" style="position: absolute; left: 46rpx; top: -141rpx; color: #FFF; font-size: 40px">咨讯</text>
+  <text class="child" style="position: absolute; left: 364rpx; top: 210rpx; color: #FFF; font-size: 14px; width: 378rpx; height: 57rpx; display: block; box-sizing: border-box">最全面的体育信息化平台</text>
+</view>
+
+<!-- Dividing line -->
+<view class="divLine"></view>
+
+
+<!-- Latest Policy choices of sports equipment for Hot Events -->
+<!-- The four keys -->
+  <view class="xcontainer"style="flex-direction:row;" style="width: 100%; display: flex; box-sizing: border-box">
+    <button class="hotspot"bindtap="GotoInformationinner"style="background:#F3533B;">
+    <text class="text">热点</text></button>
+    <!-- Click to jump to consultation details -->
+    <button class="hotspot"style="background:#FA9F42;" bindtap="gotoevent"> <text class="text">赛事</text></button>
+    <button class="hotspot"style="background:#8CD77A;" bindtap="gotoShopping" ><text class="text">运动装备</text></button>
+    <button class="hotspot"style="background:#5BCEC9;" bindtap="gotoevent"><text class="text">最新政策</text></button>
+</view>
+<view class="divLine"></view>
+
+
+
+<!-- 咨询新闻 -->
+<!-- Consulting News -->
+<view class="newscontain">
+  <view class="card" bindtap="GotoInformationinner2"style="width: 706rpx; height: 399rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <view data-publish-time="2023年2月4日" bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5qqJFv66epEo6w2lYEM*3V.XldWpckgIckVf7zo6Ah4Nx1vL5cF7wFjWvDE5Z9PvQeSaqILMXP8Mf2GBCFk63*o!/mnull&bo=awN3AWsDdwEDByI!&rf=photolist&t=5"/>
+            <text class="time">2023年2月4日</text>
+            <view class="title">比利·林恩的中场故事</view>
+        </view>
+  </view>
+  <view class="card" bindtap="GotoInformationinner"style="width: 706rpx; height: 399rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <view data-publish-time="2023年2月4日" bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5n12nd29LrrD0pP6.0hkqnRXSUONqFBKQlfQrJQZoASYeWeGgN1328GGro7EmDyXfIoqdGvE00TBL0PgGObEiRc!/mnull&bo=KgJxASoCcQEDByI!&rf=photolist&t=5"/>
+            <text class="time">2023年2月4日</text>
+            <view class="title">当我们在谈论经济学时，我们在谈论什么?</view>
+        </view>
+  </view>
+  <view class="card"style="width: 706rpx; height: 399rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx" >
+        <view data-publish-time="2023年2月4日" bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5n12nd29LrrD0pP6.0hkqnRtnf9trMm79g8zLXaT8bdOjFkEvj9W59ugafaRe7BZGG*y4zu*LJQkWLYYhRIEXBI!/mnull&bo=DgJCAQ4CQgEDByI!&rf=photolist&t=5"/>
+            <text class="time">2023年2月4日</text>
+            <view class="title">从视觉到触觉 这款VR手套能给你真实触感</view>
+        </view>
+  </view>
+  <view class="card" style="width: 706rpx; height: 399rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <view data-publish-time="2023年2月4日" bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5n12nd29LrrD0pP6.0hkqnSDlUxyt*82iglKUI3FblVPMVXCalBAoAg4emTV9ci.V17z4fW9talEI5D0RuwjVjU!/mnull&bo=dwHmAHcB5gADByI!&rf=photolist&t=5"/>
+            <text class="time">2023年2月4日</text>
+            <view class="title" >又是蟹肥虾壮时</view>
+        </view>
+  </view>
+</view>

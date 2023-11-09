@@ -1,0 +1,20 @@
+<!--pages/detect/detect.wxml-->
+<view class="container">
+  <view class="title">姿态识别</view>
+  <view class="upload-box">
+    <view class="upload-btn" bindtap="chooseVideo">选择视频</view>
+    <view class="upload-btn" bindtap="uploadVideo">上传视频</view>
+  </view>
+  <view class="video-separate"></view>
+    <!-- wx:if="{{videoUrl}}" 是一个条件渲染的指令，表示只有在videoUrl存在（即视频路径存在）的情况下才会渲染该组件。
+  src="{{videoUrl}}" 指定了要展示的视频文件的路径
+  controls 属性表示视频播放时显示控制条。 -->
+  <video wx:if="{{videoUrl}}" src="{{videoUrl}}"  class="video" object-fit="fill"></video>
+  <view wx:if="{{videoUrl==''}}" class="video" style="text-align: center;" >请选择视频</view>
+  <view class="upload-box">
+    <view class="upload-btn" bindtap="reUpload">重新上传</view>
+    <view class="upload-btn" bindtap="detectResult">查看结果</view> 
+  </view>
+  <video wx:if="{{resultUrl}}" src="{{resultUrl}}"  class="video" object-fit="fill"></video>
+</view>
+

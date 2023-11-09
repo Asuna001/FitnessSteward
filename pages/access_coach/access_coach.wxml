@@ -1,0 +1,14 @@
+<!-- <view class="title1">家长评价</view> -->
+<canvas canvas-id="radarCanvas"></canvas>
+<view class="evaluate1">
+  <text>态度: {{message_parent0}}专业技能: {{message_parent1}}服务质量: {{message_parent2}}</text>
+</view>
+
+<!-- <view class="title2">企业评价</view> -->
+<canvas canvas-id="radarCanvas2" style="position: relative; left: 0rpx; top: -1rpx"></canvas>
+
+<view class="evaluate2">
+  <text>态度: {{message_company0}}专业技能: {{message_company1}}服务质量: {{message_company2}}</text>
+</view>
+
+

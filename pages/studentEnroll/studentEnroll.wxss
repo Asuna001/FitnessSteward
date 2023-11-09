@@ -1,0 +1,88 @@
+.container {
+  background-color: #6fc599;
+  padding-top: 20rpx;
+  display: flex; /* 设置容器为flex布局 */
+  flex-direction: column; /* 垂直排列元素 */
+  justify-content: space-between; /* 填充整个父元素 */
+  align-items: center; /* 水平居中 */
+  width: 100%;
+  height: auto; /* 自适应高度 */
+}
+
+.title {
+  text-align: center;
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 20rpx;
+}
+
+.form {
+  background-color: #F2FFF2;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  width: 85%;
+}
+
+.sub-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: black;
+  background-color: #E6FFEA;
+  padding: 10rpx;
+  border-radius: 5rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.item {
+  margin-bottom: 15rpx;
+  font-size: 40rpx;
+}
+
+input {
+  font-size: 28rpx;
+  border: none;
+  width: 100%;
+  color: #4D4D4D;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #9B9B9B;
+}
+
+.border {
+  height: 1rpx;
+  width: 100%;
+  background-color: #C7C7CC;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.subBkg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  /* margin-bottom: 2.5%; */
+}
+
+button {
+  background-color: #FFFFFF;
+  color: black;
+  border: none;
+  border-radius: 5rpx;
+  font-size: rpx;
+  box-shadow: 0 4rpx 4rpx rgba(0, 0, 0, 0.25);
+  padding: 10rpx 15rpx;
+  margin-right: 20rpx;
+  flex: 1; /* 设置flex属性为1 */
+  max-width: 35%; /* 设置最大宽度 */
+}
+
+button[type="primary"] {
+  background-color: #7acfa6;
+  color: #FFFFFF;
+}
+

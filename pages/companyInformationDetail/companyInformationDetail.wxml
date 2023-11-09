@@ -1,0 +1,30 @@
+<!-- pages/studentEnroll/newStudentEnroll.wxml -->
+<view class="container">
+  <image class="company-logo" src="{{companyLogoUrl}}"></image>
+  <form class="form">
+    <view class="sub-title">公司名称：{{companyName}}</view>
+
+    <view class="sub-title">联系方式：{{companyContact}}</view>
+
+    <view class="sub-title">公司简介：</view>
+    <view class="company-profile">{{companyProfile}}</view>
+
+  </form>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

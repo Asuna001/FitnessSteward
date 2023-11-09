@@ -1,0 +1,42 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <!-- search -->
+  <view class="search"  style="position: absolute; left: 0rpx; top: 0rpx">
+    <image class="search_logo" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5vUoikW2B5oTvIGhPAKfCS7tOh0lU.qF6.REl.QSZ.BPcIJcUfswSDMcHQa3lxMcj5IzqbhNYLHYXO0tu9nE72Q!/mnull&bo=JAAkACQAJAADByI!&rf=photolist&t=5"/>
+      <input style="position: relative; left: 24rpx; top: -39rpx" class="search_input" bindchange="bindInputChange" bindFocus="bindFocusStyle" placeholder="搜索"/>
+      <view class="sort-list-wrap" style="display:{{show_list}};">
+        <block wx:for-items="{{novels}}">
+            <view class="listItem" style="display:{{show_letter}}">{{item.title}}</view>
+        </block>
+      </view>
+  </view>
+  <!-- search history -->
+  <view class="search-history" style="position: relative; left: 0rpx; top: -83rpx">搜索历史：{{history}}</view>
+  <!-- hot search list -->
+  <view class="area" style="position: absolute; left: 0rpx; top: 186rpx">
+    <!-- 24-hours hot search list -->
+    <view class="left_area">
+        <view class="left_title" bindtap="bindViewTap" >     
+            <view class="card-item-hd">
+            <image class="card-item-icon" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5hR8*gbVAs1lbLSVerXr2NdogZlkmQ47.dVn5yHjY5b7sQzZr.dBufBWItP8maUqkbxqjuy5R7aXuf8Lte.HPTw!/mnull&bo=YgCWAAAAAAADB9Y!&rf=photolist&t=5"></image>
+            <text class="card-item-name">24小时热搜榜</text>
+            </view>   
+        </view>
+        <view class="article" bindtap="bindViewTap" >1. 体育纳入高考</view>
+        <view class="article" bindtap="bindViewTap" >2. 3个月减脂</view>
+        <view class="article" bindtap="bindViewTap" >3. 阳康期间怎么锻炼</view>       
+    </view>
+    <!-- 7-days hot search list -->
+    <view class="left_area">
+        <view class="left_title" bindtap="bindViewTap" id="{{idb}}">
+        <view class="card-item-hd">
+            <image class="card-item-icon" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5hR8*gbVAs1lbLSVerXr2NdogZlkmQ47.dVn5yHjY5b7sQzZr.dBufBWItP8maUqkbxqjuy5R7aXuf8Lte.HPTw!/mnull&bo=YgCWAAAAAAADB9Y!&rf=photolist&t=5"></image>
+            <text class="card-item-name">7天热搜榜</text>
+          </view>    
+        </view>
+        <view class="article" bindtap="bindViewTap" >1. 四渡赤水户外三项赛</view>
+        <view class="article" bindtap="bindViewTap" >2. 狂飙大结局</view>
+        <view class="article" bindtap="bindViewTap" >3. 专家吐槽年轻人工资低</view>
+    </view>
+  </view>
+</view>

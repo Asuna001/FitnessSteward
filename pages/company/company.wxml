@@ -1,0 +1,26 @@
+<view>
+  <block wx:for="{{coaches}}" wx:key="coachId">
+    <navigator url="/pages/companyCoachDetail/companyCoachDetail?id={{item._id}}">
+      <view class="card">
+        <image src="{{item.avatarUrl}}" mode="aspectFill" />
+        <view class="info">
+          <view class="name">{{item.name}}</view>
+          <view class="type">{{item.type}}</view>
+          <view class="scores">
+            <view class="score-item">家长评分：</view>
+            <view class="score-item">态度：{{item.parentScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.parentScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.parentScore[2]}}分</view>
+          </view>
+          <view class="scores">
+            <view class="score-item">企业评分：</view>
+            <view class="score-item">态度：{{item.companyScore[0]}}分</view>
+            <view class="score-item">专业技能：{{item.companyScore[1]}}分</view>
+            <view class="score-item">服务质量：{{item.companyScore[2]}}分</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+  <button class="refresh-btn" bindtap="refreshScore" style="position: relative; left: 0rpx; top: 36rpx; width: 432rpx; height: 108rpx; display: block; box-sizing: border-box">刷新评分</button>
+</view>

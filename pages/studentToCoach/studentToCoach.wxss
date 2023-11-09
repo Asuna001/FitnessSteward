@@ -1,0 +1,117 @@
+/* pages/studentToCoach/studentToCoach.wxss */
+.item{
+  padding:20px 15px;
+  font-size: 14px;
+  color:#333;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+}
+.jump{
+  position: absolute;
+  right:20px;
+  color:#999;
+}
+.list{
+  margin-top: 2.5%;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+
+/* search box icon */
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+/* cancel search */
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+
+
+.card {
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.card image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.type {
+  font-size: 28rpx;
+  color: #7acfa6;
+  margin-top: 10rpx;
+}
+
+.scores {
+  margin-top: 20rpx;
+}
+
+.score-item {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+.refresh-btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #7acfa6;
+  color: #fff;
+  border-radius: 10rpx;
+}

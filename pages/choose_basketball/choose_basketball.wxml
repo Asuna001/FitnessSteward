@@ -1,0 +1,38 @@
+<!-- ****************basketball program introduction***************** -->
+<view id="onlineView">
+    <image src="http://m.qpic.cn/psc?/V51TCCs73kbhMv0xIVHO2snJNv4QE6Di/ruAMsa53pVQWN7FLK88i5jUCzTasCRaBEBYBj6wdAQCXwg26Z63p*P1nsUyhIJ0XXnFjiYyOdNoxdpUfufy4nkOCQkieKOAVFyU7dVEI9PE!/mnull&bo=IABMAAAAAAADB04!&rf=photolist&t=5"></image>
+    <text>项目介绍 - 篮球</text>
+</view>
+<view class="content">
+    <text class="invent">篮球 (basketball) ，是以手为中心的身体对抗性体育运动，是奥运会核心比赛项目。1891年12月21日，由美国马萨诸塞州斯普林菲尔德基督教青年会训练学校体育教师詹姆士·奈史密斯发明。1896年，篮球运动传入中国天津。</text>
+
+    <view class="img_benefit">
+        <image class="image" src="http://m.qpic.cn/psc?/V51TCCs73kbhMv0xIVHO2snJNv4QE6Di/ruAMsa53pVQWN7FLK88i5u4xpIuKY90nDrLvkxeocivPsaLF*7jJmHxT074uFoyh3Hc7Jqg.rZKnCnxughmhEkj4KzXEbey54JT4x911lrk!/mnull&bo=3QAxAQAAAAADB88!&rf=photolist&t=5"></image>
+
+        <text class="plan_benefits">
+            每周六、日开课，按照学员年龄和程度进行分组教学，并科学
+            制定训练时间，教学过程中突出年龄和身体条件的差异制定不
+            同的训练内容，安排不同的训练计划，通过一个阶段的篮球训
+            练课程，提升篮球技能、培养团队精神、塑造积极开朗的健康性格。</text>
+    </view>
+</view>
+
+
+<!-- ****************coach introduction***************** -->
+<view id="onlineView">
+    <image src="http://m.qpic.cn/psc?/V51TCCs73kbhMv0xIVHO2snJNv4QE6Di/ruAMsa53pVQWN7FLK88i5jUCzTasCRaBEBYBj6wdAQCXwg26Z63p*P1nsUyhIJ0XXnFjiYyOdNoxdpUfufy4nkOCQkieKOAVFyU7dVEI9PE!/mnull&bo=IABMAAAAAAADB04!&rf=photolist&t=5"></image>
+    <text>教练介绍</text>
+</view>
+
+<view class="coach">
+    <image class="image" src="https://img.freepik.com/free-vector/basketball-player-with-ball-sportsman-vector-cartoon-illustration-muscular-man-cap-professional-athlete-sport-trainer-handsome-strong-guy-with-smile-isolated-orange-background_107791-8214.jpg?size=338&ext=jpg"></image>
+
+    <text class="coach_introduction">张磊，男，汉族，硕士，讲师，校篮球队主教练。2008年本科、2016年研究生均毕业于山西大学体育学院运动训练专业，2001～2003年获得山西省高中生篮球赛冠军，2002年代表国青队赴澳大利亚参加世界青少年篮球公开赛并获优异成绩。</text>
+</view>
+
+
+<!-- *************** details introduction **************** -->
+<view id="moreDetails" bindtap="gotobasketballdetail">
+    <text>该教练课程详情介绍</text>
+    <view class="arrow"></view>
+</view>

@@ -1,0 +1,45 @@
+<!-- pages/studentEnroll/newStudentEnroll.wxml -->
+<view class="container">
+  <view class="title">企业信息绑定</view>
+  <form bindsubmit="studentEnroll" class="form">
+    <view class="sub-title">公司名称</view>
+    <view class="item">
+      <input class="input" placeholder="请输入公司名称" value="{{companyName}}" bindinput="inputCompanyName" />
+      <view class="border"></view>
+    </view>
+
+    <view class="sub-title">联系方式</view>
+    <view class="item">
+      <input class="input" placeholder="请输入联系方式" value="{{companyContact}}" bindinput="inputCompanyContact" />
+      <view class="border"></view>
+    </view>
+
+    <view class="sub-title">企业简介</view>
+    <view class="item">
+      <textarea class="textarea" placeholder="请输入公司简介" value="{{companyProfile}}" bindinput="inputCompanyProfile" rows="1" style="overflow:hidden;resize:none"></textarea>
+      <view class="border"></view>
+    </view>
+
+
+    <view class="sub-title">企业LOGO</view>
+    <view class="item">
+      <image class="avatar" src="{{companyLogoUrl}}" mode="aspectFit" />
+      <button class="upload-btn" bindtap="chooseImage">上传LOGO</button>
+    </view>
+
+  </form>
+
+  <view class="subBkg">
+    <button class="submit-btn" type="primary" bindtap="submitForm">立即提交</button>
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+

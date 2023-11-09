@@ -1,0 +1,56 @@
+<view class="top-box">
+  <view class="next-text">
+    <text>Hi\n体适能管家竭诚为您服务！</text>
+  </view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showPrivacy}}"></view>
+<view class="modal-dialog" wx:if="{{showPrivacy}}">
+  <view class="modal-title">敬告用户</view>
+  <view class="modal-body">
+    <text>  在您输入您的个人信息用于注册账号之前，我们需要您了解并同意我们的</text>
+    <text style="color: aqua;" bindtap="handleOpenPrivacyContract">隐私协议</text>
+    <text>\n  当您点击同意并开始注册账号时，即表示您已理解并同意该条款内容，该条款将对你产生法律约束力。如您拒绝，您仍可以浏览我们的小程序其余功能，但将无法注册账号用于发布和展示</text>
+  </view>
+  <view class="modal-footer">
+    <button class="modal-but1" bindtap="disagree">不同意</button>
+    <button class="modal-but2" id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">同意</button>
+  </view>
+</view>
+
+<!-- 登录 -->
+<view class="center-box">
+  <!-- 登录选项卡 -->
+  <view class="nav">
+    <view class="left">
+      <text>登录</text>
+    </view>
+  </view>
+
+  <!-- 登录表单 -->
+  <form bindsubmit="login">
+    <view class="wei-input">
+      <icon type="waiting" color="#3de09f" size="16"></icon>
+      <input name="nickName" placeholder="请输入手机号/登录名" style="margin-left: 10rpx;"></input>
+    </view>
+    <view class="wei-input">
+      <icon type="success" color="#3de09f" size="16"></icon>
+      <input name="password" password="true" placeholder="请输入登录密码" style="margin-left: 10rpx;"></input>
+    </view>
+    <view class="submit-btn">
+      <button style="width: 40%;background-color: #3de09f;font-size: 30rpx;" type="primary" form-type="submit">立即登录</button>
+      <button style="width: 40%;font-size: 30rpx;" form-type="reset">重置信息</button>
+    </view>
+    <view class="enrollList">
+      <view>还没有账号？点击</view>
+      <view class="enrollItem" bindtap="enroll">注册</view>
+    </view>
+  </form>
+
+  <privacyPopup showPop="{{showPop}}" exitApp bind:handle="popBtnTap"></privacyPopup>
+
+</view>
+<!-- 重影 -->
+<view class="shadow shadow-1"></view>
+<view class="shadow shadow-2"></view>

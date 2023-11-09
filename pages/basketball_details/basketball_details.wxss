@@ -1,0 +1,159 @@
+/* ************** basketball details overall layout************* */
+/* Overall style */
+.img_details {
+    display: flex;
+    flex-direction: column;
+    align-items: row;
+    justify-content: center;
+}
+
+/* picture style */
+.img_details .image {
+    width: 100%;
+}
+
+/* title style */
+#onlineView {
+    height: 100rpx;
+    background: #fff;
+    margin: 0 0 10rpx 10rpx;
+    line-height: 150rpx;
+    position: relative;
+}
+
+/* title's image style */
+#onlineView>image {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+}
+
+/* title's text style */
+#onlineView>text {
+    font-size: 40rpx;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+/* ************** details style ************* */
+/* course purpose style */
+.img_details .details {
+    padding: 10rpx 5rpx 0 15rpx;
+    /* background-color: #f9d1b3; */
+}
+
+/* course introduction style */
+.img_details .primary {
+    padding: 10rpx 5rpx 0 15rpx;
+    background-color: #fff8e7;
+}
+
+.img_details .intermediate {
+    padding: 10rpx 5rpx 0 15rpx;
+    background-color: #ffffff;
+}
+
+.img_details .advanced {
+    padding: 10rpx 5rpx 0 15rpx;
+    background-color: #fff8e7;
+}
+
+.img_details .competitive {
+    padding: 10rpx 5rpx 0 15rpx;
+    background-color: #ffffff;
+}
+
+/* course arrangement style */
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: 10rpx 0 50rpx 0;
+}
+
+.tr {
+    width: 110%;
+    /* 30% + 20% + 20% + 20% = 110%*/
+    display: flex;
+    flex-direction: row;
+}
+
+.th_1,
+.th_2,
+.th_3,
+.th_4,
+.td_1,
+.td_2,
+.td_3,
+.td_4 {
+    /* public attribute */
+    display: flex;
+    flex-direction: row;
+    /* line warp */
+    flex-wrap: wrap;
+    /* text center */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* the upper line of table cell */
+    border-top: 1px solid #dadada;
+    /* the lower line of table cell */
+    border-bottom: 1px solid #dadada;
+    /* the left line of table cell */
+    border-left: 1px solid #dadada;
+    /* the right line of table cell */
+    border-right: 1px solid #dadada;
+}
+
+.th_1,
+.th_2,
+.th_3,
+.th_4 {
+    font-weight: 800;
+    background-color: #f5dfad;
+}
+
+.td_1,
+.td_2,
+.td_3,
+.td_4 {
+    background-color: #fff8e7;
+}
+
+.th_1,
+.td_1 {
+    width: 30%;
+}
+
+.th_2,
+.td_2 {
+    width: 20%;
+}
+
+.th_3,
+.td_3 {
+    width: 20%;
+}
+
+.th_4,
+.td_4 {
+    width: 20%;
+}
+
+
+/* *******************choose course**************** */
+/* button style */
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f19149;
+    margin-top: 15rpx;
+    padding: 0rpx;
+    width: 400rpx;
+    height: 100rpx;
+    border-radius: 40rpx;
+    color: white;
+
+    font-size: 25px;
+}

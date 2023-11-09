@@ -1,0 +1,9 @@
+<!--pages/dataList/dataList.wxml-->
+<view>
+学生花名册
+</view>
+<view class="container">
+  <view wx:for="{{dataList}}"wx:key="{{index}}">
+  序号{{index}}:{{item.name}},{{item.age}}岁
+  </view>
+</view>

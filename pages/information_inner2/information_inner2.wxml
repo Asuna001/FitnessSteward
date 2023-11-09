@@ -1,0 +1,21 @@
+<!--pages/information_inner/information_inner.wxml-->
+<!-- <view class="divLine"></view> --> -->
+<view class ="detail-container">
+    <image class="head-img" src="{{posterData.imgSrc}}"></image>
+    <view class="auto-container">
+        <image class="auto-img" src="{{posterData.avatar}}"></image>
+        <text class = "auto-name">{{posterData.author}}</text>
+        <text class="const-text">发表于</text>
+        <text class="pub-time">{{posterData.dateTime}}</text>
+    </view>
+    <text class="title">{{posterData.title}}</text>
+    <view class="operation-container">
+        <view class="operation-imgs" bindtap="onCollectedTap">
+            <image wx:if="{{collected}}"  class="collection-img"   src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5gzq7f9xOS*TMsS5rYeyzRBu0XHynFMPHOxH2LW2izJ4ES3h20NKYY*lvh*oTYTbglAkMli0m.n6*51J6DvkPU4!/mnull&bo=MAAwAAAAAAADByI!&rf=photolist&t=5"></image>
+            <image wx:else class="collection-img" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5gzq7f9xOS*TMsS5rYeyzRAgPSzfRrOMOPr6ZT2fhA2XY*PtHEjBdZOvf7htQdbioD..AugLjQAFQ7CLT0ktOfM!/mnull&bo=MAAwAAAAAAADByI!&rf=photolist&t=5"></image>
+            <image class="share-img" catchtap="onShareTap" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5g9H7PZUmkkwdvdZ4rmC05tS7dLEQ3iAsg4QZdiGEFSSHLdt318mr7ra7cE*hnyfZK*5DNCScZpXj*aVMmtV1cw!/mnull&bo=MAAwAAAAAAADByI!&rf=photolist&t=5"></image>
+        </view>
+        <view class="horizon-line"></view>
+    </view>
+    <text class="details-content"> {{posterData.detail}}</text>
+</view>

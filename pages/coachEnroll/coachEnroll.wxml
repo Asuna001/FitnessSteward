@@ -1,0 +1,88 @@
+<!-- pages/studentEnroll/newStudentEnroll.wxml -->
+<view class="container">
+  <view class="title">教练信息绑定</view>
+  <form class="form" bindsubmit="submitInformation_Coach">
+    <view class="sub-title">基本信息</view>
+    <view class="item">
+      <input name="coachName" placeholder="请输入姓名"></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="coachAge" placeholder="请输入年龄" ></input>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <view wx:if="{{coachSex==''}}" style="display: flex;">
+        <view style="padding-left: 5%;" bindtap="man">男</view>
+        <view style="padding-left: 5%;" bindtap="woman">女</view>
+      </view>
+      <!-- 想办法把用户的选择突出 -->
+      <view wx:if="{{coachSex=='男'}}" style="display: flex;">
+        <view style="padding-left: 5%;" bindtap="man">“男”</view>
+        <view style="padding-left: 5%;" bindtap="woman">女</view>
+      </view>
+      <view wx:if="{{coachSex=='女'}}" style="display: flex;">
+        <view style="padding-left: 5%;" bindtap="man">男</view>
+        <view style="padding-left: 5%;" bindtap="woman">“女”</view>
+      </view>
+      <view class="border"></view>
+    </view>
+    <view class="item">
+      <input name="coachPhone" placeholder="请输入电话号码"></input>
+      <view class="border"></view>
+    </view>
+    <!-- 做出小按钮的样子 -->
+    <view class="item">
+      <view wx:for="{{coachType}}">
+        <view wx:if="{{index!=0}}" data-coachType="{{item}}" bindtap="chooseType">{{item}}</view>
+      </view>
+      <view>
+        <view bindtap="chooseTypeBack">返回</view>
+      </view>
+    </view>
+    <view class="item">
+      <textarea class="textarea" placeholder="请输入个人简介" bindinput="onInput_coachIntro" rows="1" style="overflow:hidden;resize:none"></textarea>
+      <view class="border"></view>
+    </view>
+
+    <view class="sub-title">文件上传</view>
+    <view class="upload-container">
+      <view class="upload-item" bindtap="chooseHeadshot">
+        <div class="upload-content">
+          <image src='{{headshotFilePath}}' mode="aspectFit"></image>
+          <text>上传头像</text>
+        </div>
+      </view>
+      <view class="upload-item" bindtap="chooseIDCard">
+        <div class="upload-content">
+          <image src="{{IDCardFilePath}}" mode="aspectFit"></image>
+          <text>上传有关身份证明</text>
+        </div>
+      </view>
+      <view class="upload-item" bindtap="choosePDF">
+        <div class="upload-content">
+          <image src="{{PDFSmallShow}}" mode="aspectFit"></image>
+          <text style="font-size: small;">{{PDFTextShow}}</text>
+          <text>上传简历（PDF格式）</text>
+        </div>
+      </view>
+      <view class="upload-item" bindtap="chooseHonorEvidence">
+        <div class="upload-content">
+          <image src="{{honorEvidenceSmallShow}}" mode="aspectFit"></image>
+          <text style="font-size: small;">{{honorEvidenceTextShow}}</text>
+          <text>上传荣誉证明文件</text>
+        </div>
+      </view>
+    </view>
+
+
+
+
+  <view class="subBkg">
+    <button class="submit-btn" type="primary" form-type="submit">确认上传</button>
+  </view>
+  <view class="subBkg">
+    <button class="submit-btn" type="primary" bindtap="reFill">重新填写</button>
+  </view>
+  </form>
+</view>

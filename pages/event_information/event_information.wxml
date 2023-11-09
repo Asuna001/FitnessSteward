@@ -1,0 +1,103 @@
+<!--pages/event_information/event_information.wxml-->
+<view class="headparent"style="width:100%" >
+  <view style="height: 100%;width: 10pt;"></view>
+  <view class="head" >
+  </view>
+  <text class="headtext" space="ensp"> 赛事信息</text>
+</view>
+<view class="divLine2"></view>
+
+
+<!--/*Event Information*/-->
+<view class="mainFrame" >
+  <swiper class="container" circular="{{true}}" vertical="{{false}}" >
+    <swiper-item class="vol-swiper-item">
+      <view class="vol-card">
+        <!-- image -->
+          <image class="vol-picture" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5lmyV1YLPd5aU1q*Zp46VSm4Zd8WTuG0zeCbXohy3k7lMAg17YOY8SdXkbaO*jsZ2AXZUlUu55gy9eDpapv8Bwc!/mnull&bo=wAU8AwAAAAABB9o!&rf=photolist&t=5" mode="aspectFill"></image>
+          <!--title-->
+          <view class="vol-meta-title">
+            <text class="vol-number">2021年中国大学生跆拳道锦标赛在盐城师范学院顺利开赛</text>
+          </view>
+          <!--time-->
+          <view class="vol-meta-time">
+            <text class="vol-number">2021年11月30日</text>
+          </view>
+          <!--description-->
+          <view class="vol-content">
+            <text class="vol-content-text">7月22日上午，由中国大学生体育协会主办、中国大学生体育协会跆拳道分会执行、盐城师范学院承办的2021年中国大学生跆拳道锦标赛在盐城师范学院新长校区体育馆拉开帷幕，大赛共吸引来自清华大学、北京大学、浙江大学、南京大学、南开大学、厦门大学等全国138所高校、1100余名学生运动员参赛。</text>
+          </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="vol-swiper-item">
+      <view class="vol-card">
+        <!--<view data-detail-href="{{item.detailHref}}" class="item">-->
+        <!-- image -->
+          <image class="vol-picture" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5lmyV1YLPd5aU1q*Zp46VSl6ctWXay9dMfGYLfjFwAVJpAYcVEjomRylvvuagfywl8bWx76GDeIDR81KVzYr4cw!/mnull&bo=OASsAwAAAAABB7M!&rf=photolist&t=5" mode="aspectFill"></image>
+          <!--title-->
+          <view class="vol-meta-title">
+            <text class="vol-number">瑞士卢塞恩2021世界大学生冬季运动会遗憾取消</text>
+          </view>
+          <!--time-->
+          <view class="vol-meta-time">
+            <text class="vol-number">2021年07月28日</text>
+          </view>
+          <!--description-->
+          <view class="vol-content">
+            <text class="vol-content-text">北京时间11月29日晚，国际大学生体育联合会（FISU）官方宣布，考虑到目前全球疫情形势、国际旅行限制等因素，原定于今年12月在瑞士卢塞恩举行的卢塞恩2021世界大学生冬季运动会（以下简称卢塞恩大冬会）将不得不取消。</text>
+          </view>
+        <!--</view>-->
+      </view>
+    </swiper-item>
+    <swiper-item class="vol-swiper-item">
+      <view class="vol-card">
+        <!--<view data-detail-href="{{item.detailHref}}" class="item">-->
+        <!-- image -->
+          <image class="vol-picture" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5lmyV1YLPd5aU1q*Zp46VSkqGgzW0610QcYF1TnjqgsZyvymmcJkNP75psJET4yIFdYJWvg.lbUyuiHRO0vNGcQ!/mnull&bo=VAY4BAAAAAABB04!&rf=photolist&t=5" mode="aspectFill"></image>
+          <!--title-->
+          <view class="vol-meta-title">
+            <text class="vol-number">第23届CUBA一级联赛（西北赛区）在山西财经大学开打</text>
+          </view>
+          <!--time-->
+          <view class="vol-meta-time">
+            <text class="vol-number">2021年04月12日</text>
+          </view>
+          <!--description-->
+          <view class="vol-content">
+            <text class="vol-content-text">4月11日，第23届中国大学生篮球（CUBA）一级联赛（西北赛区）在山西财经大学（以下简称山西财大）坞城校区体育馆火热开赛。本届篮球联赛西北赛区由中国大学生体育协会主办，中国大学生体育协会篮球分会与康湃思（北京）体育管理有限公司共同协办，山西财经大学承办，阿里体育有限公司独家运营推广，优酷体育进行网络在线直播。</text>
+          </view>
+        <!--</view>-->
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<!-- The brand side -->
+<view class="headparent"style="width:100%" >
+  <view style="height: 100%;width: 10pt;"></view>
+  <view class="head" >
+  </view>
+  <text class="headtext" space="ensp"> 品牌方</text>
+</view>
+<view class="divLine2"></view>
+<view class="row-card">
+    <!--<view data-detail-href="{{item.detailHref}}" class="item">-->
+      <image class="row-picture" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5lfUGiGx5b2ubi91ZkyO06iM4DqJx1YxXlHO0gqbV6wFjBREn6I6qmvHcGG6q3LGtbNlP0qPegKT2UYe5iGrS1A!/mnull&bo=ugK6AroCugIDByI!&rf=photolist&t=5" mode="aspectFill"></image>
+      <view class="row-meta-title">
+        <text class="row-number" style="position: relative; left: 0rpx; top: -63rpx">中国李宁赞助支持</text>
+      </view>
+
+
+
+    <!--</view>-->
+   </view>
+
+
+
+
+
+
+
+
+

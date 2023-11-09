@@ -1,0 +1,130 @@
+<!--pages/class_schedule/class_schedule.wxml-->
+<!-- class schedule-->
+<view class="headparent"style="width:100%" >
+  <view style="height: 100%;width: 10pt;"></view>
+  <view class="head" >
+  </view>
+  <text class="headtext" space="ensp"> 课表</text>
+</view>
+<view class="divLine2"></view>
+<view class="courseContainer">
+  <!-- Area of navigation -->
+  <scroll-view class="navScroll" scroll-x enable-flex scroll-into-view="t{{nowWeek?nowWeek-3:(pageNum>3?pageNum-2:0)}}" scroll-with-animation>
+    <view class="navItem" wx:for="{{weekArray}}" wx:key="index" id="t{{index}}">
+      <view 
+        class="navContent {{todayWeek == index+1 || index == pageNum?'active': ''}}" 
+        bindtap="changeNav" 
+        data-page="{{index}}">
+        {{todayWeek == index+1?item+'(本周)':item}}
+      </view>
+    </view>
+  </scroll-view>
+  <!-- Date area -->
+  <view class="date">
+    <view class="month">
+      <view>{{month}}</view>
+      <view>月</view>
+    </view>
+    <view class="day">
+      <view class="week {{todayMonth == monthNum && day == item?'todayDate':''}}" wx:for="{{nowDay}}" wx:key="index">
+        <view class="week-item">周{{week[index]}}</view>
+        <view class="day-item">{{nowDay[index] == 1?(monthNum<12?monthNum+1:1)+'月':nowDay[index]+'日'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- Class Schedule area -->
+  <view class="courseScroll">
+    <view class="courseContent">
+      <view class="courseTime">
+        <view wx:for="{{8}}" wx:key="index" class="left">
+          <view class="number">{{item+1}}</view>
+          <view class="course-time">
+            <view class="time-start">{{course_time[index][0]}}</view>
+            <view class="time-end">{{course_time[index][1]}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="course">
+        <view wx:for="{{wList[nowWeek-1]}}" wx:key="index" class="kcb-item" style="margin-left:{{item.isToday!=7?(item.isToday)*100:0}}rpx;margin-top:{{(item.jie-1)*110+4}}rpx;height:{{item.classNumber*110 - 8}}rpx;">
+          <view class="smalltext" style="background-color:{{colorArrays[item.id-1]}}">
+            <view class="smalltextName">{{item.name}}</view>
+            <view class="smalltextAddress">{{item.address}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- Optional courses -->
+<view class="divLine2"></view>
+<view class="headparent">
+  <view style="height: 100%;width: 10pt;"></view>
+  <view class="head" >
+  </view>
+  <text class="headtext" space="ensp"> 可选课程</text>
+</view>
+<view class="divLine2"></view>
+<view class="braodcast-list" >
+      <view class="braodcast-item" bindtap="goEmergency">
+            <view  class="braodcast-image-container">
+                <image class="braodcast-image" src="cloud://cloud1-5g9hej0jd2e2ade0.636c-cloud1-5g9hej0jd2e2ade0-1313474790/studentVideo/应急避险.png"></image>
+            </view>
+            <root-portal>
+              <popup style="display: flex; width: 100%; height: 100%;" show="{{show}}">
+            <view>
+              <video src="cloud://cloud1-5g9hej0jd2e2ade0.636c-cloud1-5g9hej0jd2e2ade0-1313474790/dunqi.mp4" autoplay="true"></video>
+            </view>
+  
+            </popup>
+            </root-portal>
+            <view class="braodcast-info"  >
+                <text class="braodcast-name">应急避险</text>
+            </view>
+      </view>
+      <view class="braodcast-item" bind:tap="gotobasketball">
+            <view  class="braodcast-image-container">
+                <image class="braodcast-image" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5lfUGiGx5b2ubi91ZkyO06ioU20RiLXjTFnDgWymy4MmkVVVSwdY5qja6YbAFb3Dbjs6rHAOcTsWo6*qCOAOAi0!/mnull&bo=QAZgCUAGYAkBByA!&rf=photolist&t=5"></image>
+            </view>
+            <view class="braodcast-info"  >
+                <text class="braodcast-name">篮球进阶</text>
+        </view>
+      </view>
+      <view class="braodcast-item">
+            <view  class="braodcast-image-container">
+                <image class="braodcast-image" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5qKmzsqgkXz8n.O71p9sXpigVWFQI2p6x8VrT2CBeE9RGK4tVAarZhBPSVmSNz3e0LOdR0ggXN1x3Pb3SLbEUPI!/mnull&bo=YghABmIIQAYBByA!&rf=photolist&t=5"></image>
+            </view>
+            <view class="braodcast-info"  >
+                <text class="braodcast-name">羽毛球进阶</text>
+            </view>
+      </view>
+      <view class="braodcast-item">
+            <view class="braodcast-image-container">
+                <image class="braodcast-image" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5uIEb*jAmtwcsQRxqw3ysBLc2Xw7FRhdyzM0Sj7YoyzgUZVHulER251l7Abluytm.mWLXmH79GVpadlCQ43SRRk!/mnull&bo=YAlABmAJQAYBByA!&rf=photolist&t=5"></image>
+            </view>
+            <view class="braodcast-info" >
+                <text class="braodcast-name">高级瑜伽</text> 
+            </view>
+      </view>
+      <view class="braodcast-item">
+            <view class="braodcast-image-container">
+                <image class="braodcast-image" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5qKmzsqgkXz8n.O71p9sXphzUjYWcnTQG1OQOZtJNLqvdLcavhp5PDU1P3ikG4zb.ocbaGNKEAAyJCxkP3WW*tk!/mnull&bo=QAZWCEAGVggBByA!&rf=photolist&t=5"></image>
+            </view>
+            <view class="braodcast-info" >
+                <text class="braodcast-name">自由泳进阶</text>
+                
+            </view>
+      </view>
+      <view class="braodcast-item">
+            <view class="braodcast-image-container">
+                <image class="braodcast-image" src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5qqJFv66epEo6w2lYEM*3V*p.XkNhOl9oiNCxKEiG0AgOawc8puAuX7ktdGPS70WLCbKfm9qo21sejH9hTGqTv8!/mnull&bo=YwlABmMJQAYBByA!&rf=photolist&t=5"></image>
+            </view>
+            <view class="braodcast-info" >
+                <text class="braodcast-name">高级体能</text>
+            </view>
+      </view>
+</view>
+
+
+

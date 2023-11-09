@@ -1,0 +1,71 @@
+<view>
+  <image src="{{coach.avatarurl}}" mode="aspectFill" class="image" />
+  <view class="name">{{coach.name}}</view>
+  <view class="type">{{coach.type}}</view>
+  <view class="scores">
+    <view class="score-item">家长评分：</view>
+    <view class="score-item">态度：{{coach.parentScore[0]}}分</view>
+    <view class="score-item">专业技能：{{coach.parentScore[1]}}分</view>
+    <view class="score-item">服务质量：{{coach.parentScore[2]}}分</view>
+  </view>
+  <view class="scores">
+    <view class="score-item">企业评分：</view>
+    <view class="score-item">态度：{{coach.companyScore[0]}}分</view>
+    <view class="score-item">专业技能：{{coach.companyScore[1]}}分</view>
+    <view class="score-item">服务质量：{{coach.companyScore[2]}}分</view>
+  </view>
+  <view class="intro">{{coach.Intro}}</view>
+
+  <!-- 评价表单 -->
+  <form bindsubmit="evaluateCoach" class="evaluate-form">
+    <view class="evaluate-title">家长用户评价</view>
+    <view class="form-content">
+      <view class="evaluate-item">
+        <view class="evaluate-item-title">态度：</view>
+        <radio-group bindchange="updateAttitudeScore">
+          <radio name="10" value="10">10</radio>
+          <radio name="9" value="9">9</radio>
+          <radio name="8" value="8">8</radio>
+          <radio name="7" value="7">7</radio>
+          <radio name="6" value="6">6</radio>
+          <radio name="5" value="5">5</radio>
+          <radio name="4" value="4">4</radio>
+          <radio name="3" value="3">3</radio>
+          <radio name="2" value="2">2</radio>
+          <radio name="1" value="1">1</radio>
+        </radio-group>
+      </view>
+      <view class="evaluate-item">
+        <view class="evaluate-item-title">专业技能：</view>
+        <radio-group bindchange="updateProfessionalSkillScore">
+          <radio name="10" value="10">10</radio>
+          <radio name="9" value="9">9</radio>
+          <radio name="8" value="8">8</radio>
+          <radio name="7" value="7">7</radio>
+          <radio name="6" value="6">6</radio>
+          <radio name="5" value="5">5</radio>
+          <radio name="4" value="4">4</radio>
+          <radio name="3" value="3">3</radio>
+          <radio name="2" value="2">2</radio>
+          <radio name="1" value="1">1</radio>
+        </radio-group>
+      </view>
+      <view class="evaluate-item">
+        <view class="evaluate-item-title">服务质量：</view>
+        <radio-group bindchange="updateServiceQualityScore">
+          <radio name="10" value="10">10</radio>
+          <radio name="9" value="9">9</radio>
+          <radio name="8" value="8">8</radio>
+          <radio name="7" value="7">7</radio>
+          <radio name="6" value="6">6</radio>
+          <radio name="5" value="5">5</radio>
+          <radio name="4" value="4">4</radio>
+          <radio name="3" value="3">3</radio>
+          <radio name="2" value="2">2</radio>
+          <radio name="1" value="1">1</radio>
+        </radio-group>
+      </view>
+    </view>
+    <button class="evaluate-button" formType="submit">提交评价</button>
+  </form>
+</view>

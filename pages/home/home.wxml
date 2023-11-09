@@ -1,0 +1,295 @@
+<!-- ***************Top search box*************** -->
+<view>
+    <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <!-- search box -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" bindtap="gotoSearch"/>
+                </view>
+            </view>
+            <!-- cancel search -->
+            <view class="weui-search-bar__cancel-btn" bindtap='hideInput'>取消</view>
+        </view>
+    </view>
+</view>
+
+
+<!-- ***************slideshow*************** -->
+<swiper autoplay="{{flase}}" circular="{{true}}" indicator-dots="{{true}}" interval="2000" indicator-active-color="white">
+     <swiper-item>
+      <video style="width: 100%;" object-fit="fill"  src="cloud://cloud1-5g9hej0jd2e2ade0.636c-cloud1-5g9hej0jd2e2ade0-1313474790/yinti.mp4"></video>
+    </swiper-item> 
+    <swiper-item>
+        <image mode="widthFix" src="https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014__340.jpg" />
+    </swiper-item>
+    <swiper-item>
+        <image mode="widthFix" src="https://cdn.pixabay.com/photo/2017/05/25/15/08/jogging-2343558__340.jpg" />
+    </swiper-item>
+    <swiper-item>
+        <image mode="widthFix" src="https://cdn.pixabay.com/photo/2014/11/17/13/17/crossfit-534615__340.jpg" />
+    </swiper-item>
+</swiper>
+
+
+<!-- ***************notice*************** -->
+<view class='adsec'>
+    <image class="trumpet" src="http://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5q1nrl56FiAYBUYwOBFiQ2JsdsL.a0QnnHqoJzb3ZCpTDeTyvcEDH0ssbuIncZ.vXXAFaOja2fL7iSVyHlNtLoM!/b&bo=JgApAAAAAAADFz0!&rf=viewer_4" />
+    <!-- <icon class='iconfont icongonggao c_main fs_36'></icon> -->
+    <swiper class="swiper_container" autoplay="true" circular="true" interval="2000">
+        <block wx:for="{{msgList}}">
+            <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+                <swiper-item>
+                    <view class="swiper_item">{{item.title}}</view>
+                </swiper-item>
+            </navigator>
+        </block>
+    </swiper>
+</view>
+<!-- ***************navigation bar*************** -->
+<!-- 游客 -->
+<!-- <view wx:if="{{hasUserInfo==false}}">
+  <view class="category" >
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/sports-results_1098-15670.jpg?size=626&ext=jpg" class="index_icon" bindtap="certification"></image>
+            </view>
+            <view class="category_item_text">
+                <text>请先登录</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap" >
+                <image src="https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg?size=626&ext=jpg" class="index_icon" bindtap="certification"></image>
+            </view>
+            <view class="category_item_text">
+                <text>请先登录</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/two-confident-business-man-shaking-hands-during-meeting-office-success-dealing-greeting-partner-concept_1423-185.jpg?size=626&ext=jpg" class="index_icon" bindtap="certification"></image>
+            </view>
+            <view class="category_item_text">
+                <text>请先登录</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view> -->
+<!-- 未绑定用户 -->
+<view wx:if="{{hasUserInfo==true&&userInfo.hasIdentity==0}}">
+  <view class="category" >
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/sports-results_1098-15670.jpg?size=626&ext=jpg" class="index_icon" bindtap="studentEnroll"></image>
+            </view>
+            <view class="category_item_text">
+                <text>我是家长</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap" >
+                <image src="https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg?size=626&ext=jpg" class="index_icon" bindtap="coachEnroll"></image>
+            </view>
+            <view class="category_item_text">
+                <text>我是老师</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/two-confident-business-man-shaking-hands-during-meeting-office-success-dealing-greeting-partner-concept_1423-185.jpg?size=626&ext=jpg" class="index_icon" bindtap="companyEnroll"></image>
+            </view>
+            <view class="category_item_text">
+                <text>我是企业</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+<!-- 未通过 -->
+<view wx:if="{{hasUserInfo==true&&userInfo.hasIdentity==4}}">
+  <view style="display: flex;" >
+    <view class="unpasstext">请耐心等待审核通过!</view>
+  </view>
+</view>
+<!-- 学生 -->
+<view wx:if="{{hasUserInfo==true&&userInfo.hasIdentity==1}}">
+  <view class="category">
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="goStudentClass"> 
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/sports-results_1098-15670.jpg?size=626&ext=jpg" class="index_icon"></image>
+            </view>
+            <view class="category_item_text">
+                <text>我的班级</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="goChooseClass">
+            <view class="icon_wrap" >
+                <image src="https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg?size=626&ext=jpg" class="index_icon" ></image>
+            </view>
+            <view class="category_item_text">
+                <text>我的选课</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="goStudentToCoach">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/two-confident-business-man-shaking-hands-during-meeting-office-success-dealing-greeting-partner-concept_1423-185.jpg?size=626&ext=jpg" class="index_icon"></image>
+            </view>
+            <view class="category_item_text">
+                <text>教练信息</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+<!-- 教练 -->
+<view wx:if="{{hasUserInfo==true&&userInfo.hasIdentity==2}}">
+  <view class="category">
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="gotoaccess_coach"> 
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/sports-results_1098-15670.jpg?size=626&ext=jpg" class="index_icon"></image>
+            </view>
+            <view class="category_item_text">
+                <text>我的评价</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="gotomystudents">
+            <view class="icon_wrap" >
+                <image src="https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg?size=626&ext=jpg" class="index_icon" ></image>
+            </view>
+            <view class="category_item_text">
+                <text>我的学生</text>
+            </view>
+        </view>
+    </view>
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="gotocompanyInformation">
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/two-confident-business-man-shaking-hands-during-meeting-office-success-dealing-greeting-partner-concept_1423-185.jpg?size=626&ext=jpg" class="index_icon"></image>
+            </view>
+            <view class="category_item_text">
+                <text>企业信息</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+<!-- 企业 -->
+<view wx:if="{{hasUserInfo==true&&userInfo.hasIdentity==3}}">
+  <view class="category">
+    <view class="category_item" >
+        <view class="category_item_wrap" bindtap="goCompanyToCoach"> 
+            <view class="icon_wrap">
+                <image src="https://img.freepik.com/free-photo/sports-results_1098-15670.jpg?size=626&ext=jpg" class="index_icon"></image>
+            </view>
+            <view class="category_item_text">
+                <text>教练库</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+<!-- ***************hot product*************** -->
+<view class='list' >
+    <!-- title_text + arrow -->
+    <view id="onlineView">
+        <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5q1nrl56FiAYBUYwOBFiQ2Kr2*h1Ub2XRJRyD1V571cKS30cx9n9*eJayWVxsKgoDQN.uIFefRwN1YuBxwo3fJQ!/b&bo=GAAxAAAAAAADBws!&rf=viewer_4"bindtap="gotoShopping"></image>
+        <text>专项培训</text>
+        <!-- right arrow -->
+        <view class="arrow"></view>
+    </view>
+    <!-- <block wx:for='{{goodsList}}' wx:key='list' wx:for-item="item">
+        <view class="list_item"bindtap="gotoShopping">
+            <navigator url='details?id={{item.goods_id}}'>
+                <view class='img'>
+                    <image src="{{item.goods_img}}" mode="scaleToFill"bindtap="gotoShopping" />
+                </view>
+                <view class='info'>
+                    <view class='title'>
+                        <text>{{item.goods_title}}</text>
+                    </view>
+                    <view class='price'>
+                        <text>￥{{item.goods_price}}</text>
+                    </view>
+                    <view class='num'>
+                        <text>销量{{item.goods_xiaoliang}}</text>
+                    </view> 
+                </view>
+            </navigator>
+            <view class='clear'></view>
+        </view>
+    </block> -->
+    <block wx:for='{{goodsList}}' wx:key='list' wx:for-item="item">
+        <view  class="list_item" catchtap="gotoDetecting">
+            <navigator url='details?id={{item.goods_id}}'>
+                <view class='img'>
+                    <image src="{{item.goods_img}}" mode="scaleToFill"bindtap="gotoDetecting" />
+                </view>
+                <view class='info'>
+                    <view class='title'>
+                        <text>{{item.goods_title}}</text>
+                    </view>
+                </view>
+            </navigator>
+            <view class='clear'></view>
+        </view>
+    </block>
+
+
+    <!-- <view id="moreView">
+        <text>查看更多</text>
+        <view class="arrow"></view>
+    </view> -->
+</view>
+
+
+<!-- ***************event*************** -->
+<!-- title_text + arrow -->
+<view id="onlineView" bindtap="gotoevent">
+    <image src="https://m.qpic.cn/psc?/V50qjiew0VVd8v0fo3Yq0aCdZG2mFv8m/ruAMsa53pVQWN7FLK88i5q1nrl56FiAYBUYwOBFiQ2Kr2*h1Ub2XRJRyD1V571cKS30cx9n9*eJayWVxsKgoDQN.uIFefRwN1YuBxwo3fJQ!/b&bo=GAAxAAAAAAADBws!&rf=viewer_4"bindtap="gotoevent"></image>
+    <text>运动赛事</text>
+    <!-- right arrow -->
+    <view class="arrow">
+    </view>
+</view>
+
+<!-- event introduction -->
+<view class="view_event">
+    <view class="image">
+        <image src="https://img.freepik.com/premium-photo/xxviii-half-marathon-bahia-de-cadiz_87482-1430.jpg?size=626&ext=jpg"bindtap="gotoevent"></image>
+    </view>
+
+    <!-- introductoin -->
+    <view class="introduction"bindtap="gotoevent">
+        <text class="text_event">"四渡赤水"户外三项赛暨嘉年华马拉松挑战赛</text>
+    </view>
+
+    <!-- participants and date -->
+    <view class="people_date">
+        <text decode="{{true}}">2568人已报名&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2023-1-15</text>
+    </view>
+</view>
+<!-- 隐私授权弹窗 -->
+<!-- <privacyPopup showPop="{{showPop}}" exitApp bind:handle="popBtnTap"></privacyPopup> -->
+
+

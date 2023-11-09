@@ -1,0 +1,155 @@
+/* ************** coach overall layout************* */
+/*  Overall style: flex */ 
+
+.coach_container {
+  background-color:rgb(229, 226, 229);
+}
+
+/* ****************实名认证后的界面******************** */
+
+/* ************** coach profiles style************* */
+.coach_container .introduction {
+    position: relative;
+    margin:10rpx 0;
+ 
+}
+
+/* image style */
+.coach_container .introduction .image {
+    height: 270rpx;
+    width: 700rpx;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Adjust image brightness */
+    filter: brightness(40%);
+    background-size: cover;
+    background-position: center;
+    transition: background .3s ease-in-out;
+}
+
+/* text style */
+.coach_container .introduction .text {
+    width: 200px;
+    height: 40px;  
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 55rpx;
+    /* font-weight: bold; */
+    color: white;
+}  
+
+
+/* ************** recruitment information style************* */
+.coach_container .recruitment {
+    position: relative;
+    margin: 10rpx 0;
+ 
+}
+
+/* image style */
+.coach_container .recruitment .image {
+    height: 280rpx;
+    width: 700rpx;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Adjust image brightness */
+    filter: brightness(40%);
+    background-size: cover;
+    background-position: center;
+    transition: background .3s ease-in-out;
+}
+  
+/* text style */
+.coach_container .recruitment .text {
+    width: 200px;
+    height: 50px;  
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 55rpx;
+    /* font-weight: bold; */
+    color: white;
+}  
+
+
+/* ************** class style ************* */
+.coach_container .class {
+    position: relative;
+    margin: 10rpx 0;
+   
+}
+
+/* image style */
+.coach_container .class .image {
+    height: 300rpx;
+    width: 700rpx;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Adjust image brightness */
+    filter: brightness(40%);
+    background-size: cover;
+    background-position: center;
+    transition: background .3s ease-in-out;
+}
+
+/* text style */
+.coach_container .class .text {
+    width: 200px;
+    height: 55px;  
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 55rpx;
+    /* font-weight: bold; */
+    color: white;
+}  
+
+
+/* ************** feedback style************* */
+.coach_container .opinion {
+    position: relative;
+    margin: 10rpx 0 0 0;
+   
+}
+
+/* image style */
+.coach_container .opinion .image {
+    height: 270rpx;
+    width: 700rpx;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Adjust image brightness */
+    filter: brightness(40%);
+    background-size: cover;
+    background-position: center;
+    transition: background .3s ease-in-out;
+}
+
+/* text style */
+.coach_container .opinion .text {
+    width: 200px;
+    height: 55px;  
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 55rpx;
+    /* font-weight: bold; */
+    color: white;
+}  

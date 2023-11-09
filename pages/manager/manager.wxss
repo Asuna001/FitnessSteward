@@ -1,0 +1,109 @@
+.page {
+  background-color: #3de09f;
+  margin-bottom: 20rpx;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #6fc599;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.title {
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.expand {
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.form {
+  background-color: #F2FFF2;
+  /* border-radius: 10rpx; */
+  padding: 20rpx;
+  width: auto;
+}
+
+.sub-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: black;
+  background-color: #e6ffea;
+  padding: 10rpx;
+  border-radius: 5rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.company-item, .coach-item {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+
+
+
+.submit-btn{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.button {
+  width: 100%;
+  border-radius: 15rpx;
+  box-shadow: 0 5rpx 10rpx #a5a5a5;
+  padding: 5% 2%;
+  color: white;
+  font-weight: bold;
+  border-radius: 15rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.class-btn {
+  background-color: #3de09f;
+  color: #fff;
+  width: 45%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 10rpx 10rpx 20rpx;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+

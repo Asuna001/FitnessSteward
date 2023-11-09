@@ -1,0 +1,10 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="scroll-view">
+    <view wx:for="{{studentList}}" class="student-item">
+      <view bindtap="gotoDetail" data-choose="{{item}}">
+        <view class="name">{{item.studentName}}</view>
+      </view>
+      
+    </view>
+  </scroll-view>
+</view>

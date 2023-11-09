@@ -1,0 +1,207 @@
+/* Section title style */
+.headtext{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #5f5a5a;
+}
+.headparent{
+  width: 100%;
+  height:20pt;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+.head {
+  background-color: #7acfa6;
+  width:17px;
+  height:70%;
+}
+
+/*divider style*/
+.divLine2{
+  background: #e0e3da;
+  width: 100%;
+  height: 2rpx;
+ }
+
+
+ /*The style of the tournament introduction interface*/
+ .mainFrame {
+  margin-top: 0rpx;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #ebebeb;
+  height: 400pt;
+}
+
+.container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #fbf9fe;
+  height: 400pt;
+}
+
+.vol-swiper-item {
+  padding: 20rpx;
+  height: 400pt;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+
+}
+
+.title {
+  /*margin-left: 20px;*/
+  display: block;
+  width: 100%;
+  height: 50px;
+  /*text-align: center;*//*line-height: 50px;*/
+  color: #f00;
+}
+
+.time {
+  font-size: 22rpx;
+  text-align: right;
+  /*padding: 50rpx;*/
+  color: #ccc;
+}
+
+.vol-card {
+  /*parent layout  and  this inner padding*/
+  padding: 20rpx;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #c0c0c0;
+  background: #fff;
+  margin-top: 0px;
+  height:365pt;
+}
+
+.vol-swiper {
+  height: 100%;
+}
+
+.vol-swiper-icard{
+  height:380pt;
+}
+
+.vol-picture {
+  width: 100%;
+}
+
+.vol-meta-title {
+  margin-top: 5px;
+  text-align: center;
+  padding: 10rpx 5rpx;
+  font-size: 17px;
+  color: #000;
+  font-family: 'KaiTi';
+}
+
+.vol-meta-time {
+  padding: 10rpx 5rpx;
+  font-size: 12px;
+  float: right;
+  margin-right: 5px;
+  color: #888;
+}
+
+.vol-author {
+  float: right;
+}
+
+.vol-content {
+  margin-top: 15rpx;
+  padding: 0 5rpx;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: 'KaiTi';
+  color: #9c9c9c;
+}
+
+.vol-content-text {
+  margin-top: 5px;
+  width: 100%;
+  min-height: 200rpx;
+  display: inline-block;
+  text-indent: 2em;
+}
+
+.vol-makettime {
+  font-size: 13px;
+  color: #888;
+  text-align: right;
+}
+
+
+/* The brand side designs the interface style */
+.row-card {
+  /*parent layout  and  this inner padding*/
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #c0c0c0;
+  background: #fff;
+  height:150pt;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  flex-wrap:nowrap;
+  background-color: #f6f6f6;
+}
+
+.row-swiper {
+  height: 100%;
+}
+
+.row-swiper-icard{
+  height:100%;
+}
+
+.row-picture {
+  width: 50%;
+  height:100%
+}
+
+.row-meta-title {
+  margin-top: 5px;
+  text-align: center;
+  padding: 5rpx 5rpx;
+  font-size: 23px;
+  color: #000;
+  font-family: '楷体';
+}
+
+.row-meta-time {
+  padding: 10rpx 5rpx;
+  font-size: 12px;
+  float: right;
+  margin-right: 5px;
+  color: #888;
+}
+
+.row-author {
+  float: right;
+}
+
+.row-content {
+  margin-top: 15rpx;
+  padding: 0 5rpx;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: '楷体';
+  font-weight: 700;
+  color: #9c9c9c;
+}
+
+.row-content-text {
+  margin-top: 5px;
+  width: 50%;
+  min-height: 100rpx;
+  display: inline-block;
+  text-indent: 2em;
+}
+
+

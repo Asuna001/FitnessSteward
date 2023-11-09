@@ -1,0 +1,43 @@
+<view class="top-box">
+  <view class="next-text">
+    <text>Hi\n体适能管家竭诚为您服务！</text>
+    <view >
+      <image class="avatar" mode="scaleToFill" src="{{avatar}}" bind:tap="chooseAvatar"/>
+    </view>
+  </view>
+</view>
+<!-- 注册 -->
+<view class="center-box">
+  <view class="nav">
+    <view class="right">
+      <text>注册</text>
+    </view>
+  </view>
+
+  <!-- 注册 -->
+  <form bindsubmit="enroll">
+    <view class="wei-input">
+      <icon type="waiting" color="#3de09f" size="16"></icon>
+      <input name="nickName" placeholder="昵称" style="margin-left: 10rpx;"></input>
+    </view>
+
+    <view class="wei-input">
+      <icon type="success" color="#3de09f" size="16"></icon>
+      <input password="true" name="password" placeholder="请输入密码" style="margin-left: 10rpx;"></input>
+    </view>
+    <view class="wei-input">
+      <icon type="success" color="#3de09f" size="16"></icon>
+      <input password="true" name="passwordTwice" placeholder="请再次输入密码" style="margin-left: 10rpx;"></input>
+    </view>
+
+    <view class="submit-btn">
+      <button style="width: 40%;background-color: #3de09f;font-size: 30rpx;" type="primary" form-type="submit" disabled="{{loading}}">立即注册</button>
+      <button style="width: 40%;font-size: 30rpx;" form-type="reset">重置信息</button>
+    </view>
+
+  </form>
+
+</view>
+<!-- 重影 -->
+<view class="shadow shadow-1"></view>
+<view class="shadow shadow-2"></view>
